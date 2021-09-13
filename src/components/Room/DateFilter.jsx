@@ -7,16 +7,23 @@ import "react-datepicker/dist/react-datepicker.css";
 
 export default function DateFilter() {
   const { currentUser } = useAuth();
-  const [startDate, setStartDate] = useState(new Date());
+  const { startDate, setStartDate } = useRoom();
+  // const [startDate, setStartDate] = useState(new Date());
 
   const LoginToUse = (
     <p>
-      Please <Link to="/login">login</Link> or <Link to="/signup">signup</Link>
+      Please <Link to="/login">login</Link> or <Link to="/signup">signup</Link>{" "}
       to use book room feature
     </p>
   );
   const Filter = (
-    <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+    <>
+      <h5>Select date for booking</h5>
+      <DatePicker
+        selected={startDate}
+        onChange={(date) => setStartDate(date)}
+      />
+    </>
   );
   return currentUser ? Filter : LoginToUse;
 }

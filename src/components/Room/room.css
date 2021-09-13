@@ -8,9 +8,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgb(0 0 0 / 48%);
   color: #fff;
-  border-bottom-right-radius: 1rem;
+  border-bottom-right-radius: 9999rem;
+  border-top-right-radius: 9999rem;
   font-size: 0.5rem;
   text-align: center;
 }
