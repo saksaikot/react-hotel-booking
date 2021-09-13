@@ -1,5 +1,6 @@
 # This is a hotel booking project
 
-- user can filter rooms
-- to book and find available rooms user need to be logged in
-- [to do] room details and other features will be completed after other assignments are done
+- [Live demo](https://react-hotel-booking-saksaikot.netlify.app/room)
+- User can filter rooms
+- To book and find available rooms user need to be logged in
+- [To do] room details and other features will be completed after other assignments are done
