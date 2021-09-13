@@ -1,28 +1,25 @@
-import room1 from "../assets/images/details-1.jpeg";
-import room2 from "../assets/images/details-2.jpeg";
-import room3 from "../assets/images/details-3.jpeg";
-import room4 from "../assets/images/details-4.jpeg";
-import img1 from "../assets/images/room-1.jpeg";
-import img2 from "../assets/images/room-2.jpeg";
-import img3 from "../assets/images/room-3.jpeg";
-import img4 from "../assets/images/room-4.jpeg";
-import img5 from "../assets/images/room-5.jpeg";
-import img6 from "../assets/images/room-6.jpeg";
-import img7 from "../assets/images/room-7.jpeg";
-import img8 from "../assets/images/room-8.jpeg";
-import img9 from "../assets/images/room-9.jpeg";
-import img10 from "../assets/images/room-10.jpeg";
-import img11 from "../assets/images/room-11.jpeg";
-import img12 from "../assets/images/room-12.jpeg";
+import presidential from "../../assets/images/details-1.jpeg";
+import details1 from "../../assets/images/details-2.jpeg";
+import details2 from "../../assets/images/details-3.jpeg";
+import details3 from "../../assets/images/details-4.jpeg";
+import image1 from "../../assets/images/room-1.jpeg";
+import image2 from "../../assets/images/room-2.jpeg";
+import image3 from "../../assets/images/room-3.jpeg";
+import image4 from "../../assets/images/room-4.jpeg";
+import image5 from "../../assets/images/room-5.jpeg";
+import image6 from "../../assets/images/room-6.jpeg";
+import image7 from "../../assets/images/room-7.jpeg";
+import image8 from "../../assets/images/room-8.jpeg";
+import image9 from "../../assets/images/room-9.jpeg";
+import image10 from "../../assets/images/room-10.jpeg";
+import image11 from "../../assets/images/room-11.jpeg";
+import image12 from "../../assets/images/room-12.jpeg";
 
 const data = [
   {
-    sys: {
-      id: "1",
-    },
     fields: {
       id: "1",
-      class: "economy",
+      roomClass: "economy",
       type: "single",
       price: 100,
       size: 200,
@@ -45,28 +42,28 @@ const data = [
         {
           fields: {
             file: {
-              url: img1,
+              url: image1,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room2,
+              url: details1,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room3,
+              url: details2,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room4,
+              url: details3,
             },
           },
         },
@@ -74,12 +71,9 @@ const data = [
     },
   },
   {
-    sys: {
-      id: "2",
-    },
     fields: {
-      name: "single basic",
-      slug: "single-basic",
+      id: "2",
+      roomClass: "basic",
       type: "single",
       price: 150,
       size: 250,
@@ -102,28 +96,28 @@ const data = [
         {
           fields: {
             file: {
-              url: img2,
+              url: image2,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room2,
+              url: details1,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room3,
+              url: details2,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room4,
+              url: details3,
             },
           },
         },
@@ -131,12 +125,9 @@ const data = [
     },
   },
   {
-    sys: {
-      id: "3",
-    },
     fields: {
-      name: "single standard",
-      slug: "single-standard",
+      id: "3",
+      roomClass: "standard",
       type: "single",
       price: 250,
       size: 300,
@@ -159,28 +150,28 @@ const data = [
         {
           fields: {
             file: {
-              url: img3,
+              url: image3,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room2,
+              url: details1,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room3,
+              url: details2,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room4,
+              url: details3,
             },
           },
         },
@@ -188,12 +179,9 @@ const data = [
     },
   },
   {
-    sys: {
-      id: "4",
-    },
     fields: {
-      name: "single deluxe",
-      slug: "single-deluxe",
+      id: "4",
+      roomClass: "deluxe",
       type: "single",
       price: 300,
       size: 400,
@@ -216,28 +204,28 @@ const data = [
         {
           fields: {
             file: {
-              url: img4,
+              url: image4,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room2,
+              url: details1,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room3,
+              url: details2,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room4,
+              url: details3,
             },
           },
         },
@@ -245,12 +233,10 @@ const data = [
     },
   },
   {
-    sys: {
-      id: "5",
-    },
     fields: {
-      name: "double economy",
-      slug: "double-economy",
+      id: "5",
+      roomClass: "economy",
+
       type: "double",
       price: 200,
       size: 300,
@@ -273,28 +259,28 @@ const data = [
         {
           fields: {
             file: {
-              url: img5,
+              url: image5,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room2,
+              url: details1,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room3,
+              url: details2,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room4,
+              url: details3,
             },
           },
         },
@@ -302,12 +288,10 @@ const data = [
     },
   },
   {
-    sys: {
-      id: "6",
-    },
     fields: {
-      name: "double basic",
-      slug: "double-basic",
+      id: "6",
+      roomClass: "basic",
+
       type: "double",
       price: 250,
       size: 350,
@@ -330,28 +314,28 @@ const data = [
         {
           fields: {
             file: {
-              url: img6,
+              url: image6,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room2,
+              url: details1,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room3,
+              url: details2,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room4,
+              url: details3,
             },
           },
         },
@@ -359,12 +343,10 @@ const data = [
     },
   },
   {
-    sys: {
-      id: "7",
-    },
     fields: {
-      name: "double standard",
-      slug: "double-standard",
+      id: "7",
+      roomClass: "standard",
+
       type: "double",
       price: 300,
       size: 400,
@@ -387,28 +369,28 @@ const data = [
         {
           fields: {
             file: {
-              url: img7,
+              url: image7,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room2,
+              url: details1,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room3,
+              url: details2,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room4,
+              url: details3,
             },
           },
         },
@@ -416,12 +398,10 @@ const data = [
     },
   },
   {
-    sys: {
-      id: "8",
-    },
     fields: {
-      name: "double deluxe",
-      slug: "double-deluxe",
+      id: "8",
+      roomClass: "deluxe",
+
       type: "double",
       price: 400,
       size: 500,
@@ -444,28 +424,28 @@ const data = [
         {
           fields: {
             file: {
-              url: img8,
+              url: image8,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room2,
+              url: details1,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room3,
+              url: details2,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room4,
+              url: details3,
             },
           },
         },
@@ -473,12 +453,10 @@ const data = [
     },
   },
   {
-    sys: {
-      id: "9",
-    },
     fields: {
-      name: "family economy",
-      slug: "family-economy",
+      id: "9",
+      roomClass: "economy",
+
       type: "family",
       price: 300,
       size: 500,
@@ -501,28 +479,28 @@ const data = [
         {
           fields: {
             file: {
-              url: img9,
+              url: image9,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room2,
+              url: details1,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room3,
+              url: details2,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room4,
+              url: details3,
             },
           },
         },
@@ -530,12 +508,10 @@ const data = [
     },
   },
   {
-    sys: {
-      id: "10",
-    },
     fields: {
-      name: "family basic",
-      slug: "family-basic",
+      id: "10",
+      roomClass: "basic",
+
       type: "family",
       price: 350,
       size: 550,
@@ -558,28 +534,28 @@ const data = [
         {
           fields: {
             file: {
-              url: img10,
+              url: image10,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room2,
+              url: details1,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room3,
+              url: details2,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room4,
+              url: details3,
             },
           },
         },
@@ -587,12 +563,10 @@ const data = [
     },
   },
   {
-    sys: {
-      id: "11",
-    },
     fields: {
-      name: "family standard",
-      slug: "family-standard",
+      id: "11",
+      roomClass: "standard",
+
       type: "family",
       price: 400,
       size: 600,
@@ -615,28 +589,28 @@ const data = [
         {
           fields: {
             file: {
-              url: img11,
+              url: image11,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room2,
+              url: details1,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room3,
+              url: details2,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room4,
+              url: details3,
             },
           },
         },
@@ -644,12 +618,10 @@ const data = [
     },
   },
   {
-    sys: {
-      id: "12",
-    },
     fields: {
-      name: "family deluxe",
-      slug: "family-deluxe",
+      id: "12",
+      roomClass: "deluxe",
+
       type: "family",
       price: 500,
       size: 700,
@@ -672,28 +644,28 @@ const data = [
         {
           fields: {
             file: {
-              url: img12,
+              url: image12,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room2,
+              url: details1,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room3,
+              url: details2,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room4,
+              url: details3,
             },
           },
         },
@@ -701,12 +673,9 @@ const data = [
     },
   },
   {
-    sys: {
-      id: "13",
-    },
     fields: {
-      name: "presidential",
-      slug: "presidential-room",
+      id: "13",
+      roomClass: "luxury",
       type: "presidential",
       price: 600,
       size: 1000,
@@ -729,28 +698,28 @@ const data = [
         {
           fields: {
             file: {
-              url: room1,
+              url: presidential,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room2,
+              url: details1,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room3,
+              url: details2,
             },
           },
         },
         {
           fields: {
             file: {
-              url: room4,
+              url: details3,
             },
           },
         },
@@ -758,5 +727,12 @@ const data = [
     },
   },
 ];
+export const categories = [
+  { name: "economy" },
+  { name: "basic" },
+  { name: "standard" },
+  { name: "deluxe" },
+  { name: "luxury" },
+];
 
-console.log(data);
+export default data;

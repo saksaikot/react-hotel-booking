@@ -35,15 +35,15 @@ export default function NavTop() {
   return (
     <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
       <Container>
-        <Link to={routePaths.gallery} className="navbar-brand">
-          PhotoG
+        <Link to={routePaths.room} className="navbar-brand">
+          R Resort
         </Link>
         {/* <Navbar.Brand href="#home">PhotoG</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Link to={routePaths.gallery} className="nav-link">
-              Gallery
+            <Link to={routePaths.room} className="nav-link">
+              Rooms
             </Link>
           </Nav>
           {currentUser ? SignOut : Auth}

@@ -17,5 +17,5 @@ const app = firebase.initializeApp({
 export const auth = app.auth();
 export default app;
 export const db = {
-  feedbacks: dbActions(app.database().ref("/feedbacks")),
+  bookings: dbActions(app.database().ref("/bookings")),
 };
