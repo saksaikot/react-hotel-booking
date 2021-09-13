@@ -1,5 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
+import Loading from "../components/Loading";
 import { auth } from "../services/firebase/firebase";
+
 const AuthContext = React.createContext();
 
 export function useAuth() {
@@ -49,9 +51,10 @@ export default function AuthProvider({ children }) {
     updateEmail,
     updatePassword,
   };
+
   return (
     <AuthContext.Provider value={value}>
-      {!loading && children}
+      {loading ? <Loading /> : children}
     </AuthContext.Provider>
   );
 }

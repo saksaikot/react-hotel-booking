@@ -11,12 +11,14 @@ export function useRoom() {
 }
 
 export default function RoomProvider({ children }) {
-  const [rooms, setRooms] = useState(roomData);
+  const [rooms, setRooms] = useState();
   const [startDate, setStartDate] = useState(new Date());
   const [bookings, setBooking] = useState();
   const [alreadyBooked, setAlreadyBooked] = useState({});
   const [dbBookings] = useList(db.bookings.getAll());
-
+  useEffect(() => {
+    setRooms(roomData);
+  }, []);
   useEffect(() => {
     const dbBookingArray = [];
     dbBookings.map((v) => dbBookingArray.push({ key: v.key, ...v.val() }));

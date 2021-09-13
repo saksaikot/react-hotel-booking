@@ -25,9 +25,10 @@ export default function Room() {
     <>
       <Filters />
       <div className="d-flex flex-wrap justify-content-center">
-        {rooms.map((room) => (
-          <Item key={room.fields.id} {...{ handleBookThisRoom, room }} />
-        ))}
+        {rooms &&
+          rooms.map((room) => (
+            <Item key={room.fields.id} {...{ handleBookThisRoom, room }} />
+          ))}
       </div>
     </>
   );
