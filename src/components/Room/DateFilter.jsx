@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, lazy, Suspense } from "react";
 import { useRoom } from "../../contexts/RoomContext";
 import { useAuth } from "../../contexts/AuthContext";
 import { Link } from "react-router-dom";
-import DatePicker from "react-datepicker";
+
+// import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import Loading from "../Loading";
+const DatePicker = lazy(() => import("react-datepicker"));
 
 export default function DateFilter() {
   const { currentUser } = useAuth();
@@ -19,10 +22,12 @@ export default function DateFilter() {
   const Filter = (
     <>
       <h5>Select date for booking</h5>
-      <DatePicker
-        selected={startDate}
-        onChange={(date) => setStartDate(date)}
-      />
+      <Suspense fallback={<Loading />}>
+        <DatePicker
+          selected={startDate}
+          onChange={(date) => setStartDate(date)}
+        />
+      </Suspense>
     </>
   );
   return currentUser ? Filter : LoginToUse;

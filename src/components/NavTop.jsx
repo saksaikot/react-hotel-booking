@@ -35,7 +35,7 @@ export default function NavTop() {
   return (
     <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
       <Container>
-        <Link to={routePaths.room} className="navbar-brand">
+        <Link to={routePaths.home} className="navbar-brand">
           R Resort
         </Link>
         {/* <Navbar.Brand href="#home">PhotoG</Navbar.Brand> */}

@@ -1,14 +1,19 @@
 import { lazy, Suspense } from "react";
-import AuthProvider from "../contexts/AuthContext";
-import RoomProvider from "../contexts/RoomContext";
+// import AuthProvider from "../contexts/AuthContext";
+// import RoomProvider from "../contexts/RoomContext";
+// import NavTop from "./NavTop";
 
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./Home";
+import Loading from "./Loading";
 import routePaths from "./routerPaths";
 // import Signup from "./Signup";
 
+const AuthProvider = lazy(() => import("../contexts/AuthContext"));
+const RoomProvider = lazy(() => import("../contexts/RoomContext"));
 const Login = lazy(() => import("./Login"));
 const Signup = lazy(() => import("./Signup"));
-const PrivateRoute = lazy(() => import("./PrivateRoute"));
+// const PrivateRoute = lazy(() => import("./PrivateRoute"));
 const ResetPassword = lazy(() => import("./ResetPassword"));
 const NavTop = lazy(() => import("./NavTop"));
 const Room = lazy(() => import("./Room/Room"));
@@ -21,30 +26,30 @@ const Room = lazy(() => import("./Room/Room"));
 // import Room from "./Room/Room";
 
 function App() {
-  // const history = useHistory();
-  // let match = useParams();
-  // console.log(match, "App.jsx");
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<Loading />}>
       <AuthProvider>
         <RoomProvider>
           <Router>
             <NavTop />
             <div
-              className="container d-flex align-items-start justify-content-center"
+              className=" d-flex align-items-start justify-content-center"
               style={{ minHeight: "100vh" }}
             >
-              <div className="w-100" style={{ maxWidth: "1080px" }}>
-                <Switch>
-                  <Route exact path={routePaths.signup} component={Signup} />
-                  <Route exact path={routePaths.login} component={Login} />
-                  <Route exact path={routePaths.Room} component={Room} />
-                  <Route
-                    path={routePaths.resetPassword}
-                    component={ResetPassword}
-                  />
-                  <Route exact path={routePaths.home} component={Room} />
-                </Switch>
+              <div className="w-100">
+                <Suspense fallback={<Loading />}>
+                  <Switch>
+                    <Route exact path={routePaths.home} component={Home} />
+
+                    <Route exact path={routePaths.signup} component={Signup} />
+                    <Route exact path={routePaths.login} component={Login} />
+                    <Route exact path={routePaths.Room} component={Room} />
+                    <Route
+                      path={routePaths.resetPassword}
+                      component={ResetPassword}
+                    />
+                  </Switch>
+                </Suspense>
               </div>
             </div>
           </Router>
